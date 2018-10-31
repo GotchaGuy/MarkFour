@@ -1,0 +1,40 @@
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+body {
+	margin: 0;
+}
+header {
+	background-color: #274f75;
+}
+
+.absolute {
+	position: absolute;
+	top: 50px;
+	right: 250px;
+	color: #bdc5cf;
+}
+.aviation {
+	position: absolute;
+	top: 50px;
+	left: 250px;
+	color: white;
+	font-size: 45px;
+	font-weight: 700;
+}
+div.date {
+	width: 28px;
+	height: 28px;
+	padding: 10px;
+	background-color: #274f75;
+	color: white;
+	font-weight: 700;
+	/*font-weight: bold;*/
+	font-size: "Arial";
+	font-size: 18px;
+	line-height: .9;
+}
+div.date * {
+	text-align: right;
+}
