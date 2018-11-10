@@ -1,46 +1,12 @@
-.container {
+body {
+	margin: 0;
+}
+
+div.wrapper {
 	max-width: 940px;
 	margin: 0 auto;
 	position: relative;
 }
-body {
-	margin: 0;
-}
-header {
-	background-color: #274f75;
-}
-
-.absolute {
-	position: absolute;
-	top: 50px;
-	right: 250px;
-	color: #bdc5cf;
-}
-.aviation {
-	position: absolute;
-	top: 50px;
-	left: 250px;
-	color: white;
-	font-size: 45px;
-	font-weight: 700;
-}
-div.date {
-	width: 28px;
-	height: 28px;
-	padding: 10px;
-	background-color: #274f75;
-	color: white;
-	font-weight: 700;
-	/*font-weight: bold;*/
-	font-size: "Arial";
-	font-size: 18px;
-	line-height: .9;
-}
-div.date * {
-	text-align: right;
-}
-
-/*ye this is Nikola's part*/
 
 header section#intro {
 	height: 147px;
@@ -103,6 +69,7 @@ header nav ul li a {
 	font-size: 16px;
 	display: block;
 	padding: 13px 28px 13px 28px;
+	/*I have a question here*/
 	border-bottom: 6px solid transparent;
 	transition-property: background-color, border;
 	transition-duration: .5s;
@@ -114,20 +81,232 @@ header nav ul li a:hover {
 }
 
 main {
+	position: relative;
 	background-image: url('../img/sky.png');
 	background-size: 100%;
-	background-position: 0 -58px;
+	background-position: 0 -71px;
 	background-repeat: no-repeat;
+	z-index: -12;
+}
+
+main #hero {
+	position: relative;
 }
 
 main #hero .heroTextWrapper {
 	height: 455px;
+	color: #295071;
+	text-shadow: 0 1px #fff;
+	position: relative;
 }
 
 main #hero .heroTextWrapper h2 {
 	margin: 0;
+	font-size: 60px;
+	width: 500px;
+	position: absolute;
+	top: 113px;
+	font-weight: 700;
+}
+
+main #hero .heroTextWrapper p {
+	font-size: 25px;
+	width: 350px;
+	margin: 0;
+	position: absolute;
+	top: 261px;
+}
+
+main #hero img {
+	position: absolute;
+	bottom: -50px;
+	right: -40px;
+	z-index: -10;
 }
 
 main #topics {
 	height: 690px;
+	box-shadow: 0 0 5px #afb8ba;
+	background-color: #fff;
+	padding: 38px 20px;
+	box-sizing: border-box;
 }
+
+main #topics .articles {
+	width: 67%;
+	float: left;
+}
+
+main #topics .articles h3,
+main #topics aside h3 {
+	font-weight: normal;
+	font-size: 29px;
+	font-family: "Arial";
+	margin: 0;
+	margin-bottom: 27px;
+}
+
+main #topics .articles h3 span,
+main #topics .articles h4 span,
+main #topics aside h3 span {
+	font-weight: 700;
+	color: #c80808;
+}
+
+main #topics .articles h4.font {
+	font-size: 22px;
+	font-weight: normal;
+	font-family: "Arial";
+	margin: 0;
+	margin-bottom: 27px;
+}
+
+main #topics .articles img {
+	border: 1px solid #c80808;
+	padding: 9px;
+	float: left;
+	margin-right: 20px;
+}
+
+main #topics .articles p {
+	font-family: "Arial";
+	font-size: 14px;
+	margin: 40px;
+}
+
+main #topics aside {
+	width: 33%;
+	float: left;
+}
+
+main #topics .articles div.doin {
+	float: left;
+}
+main #topics .articles article {
+	display: inline-block;
+}
+
+main #topics .articles .left {
+	width: 49%;
+}
+main #topics .articles .right {
+	width: 49%;
+}
+main #topics .articles .doin p {
+	margin: 20px 40px 20px 0px;
+}
+
+main aside div div.date {
+	width: 33px;
+	height: 33px;
+	padding: 5px;
+	background-color: #274f75;
+	color: white;
+	font-weight: 700;
+	/*font-weight: bold;*/
+	font-size: "Arial";
+	font-size: 18px;
+	line-height: .9;
+	display: inline-block;
+}
+main aside div div.date * {
+	text-align: right;
+}
+main aside h5 {
+	display: inline-block;
+	width: 245px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	position: relative;
+	bottom: 25px;
+	font-size: 16px;
+	color: #274f75;
+}
+main aside div div.flo {
+	float: left;
+}
+main aside div p {
+	width: 300px;
+	border-bottom: 1px solid #c6c6c6;
+	padding-bottom: 20px;
+	font-family: "Arial";
+	font-size: 14px;
+}
+.bofa {
+	text-decoration-line: underline;
+	font-weight: 600;
+}
+footer section#outro {
+	height: 110px;
+	background-color: #274f75;
+	box-shadow: 0 1px 4px black;
+	position: relative;
+	border-top: 1px solid #c80808;
+}
+/*footer #outro .wrapper div.pos {
+	position: relative;
+}*/
+
+footer #outro .wrapper .social ul {
+	color: white;
+	list-style-type: none;
+	margin-top: 40px;
+	padding-left: 0;
+}
+footer #outro .wrapper .social li {
+	display: inline-block;
+}
+footer #outro .wrapper .social li a {
+	color: white;
+	font-size: 25px;
+	padding: 0 10px;
+}
+footer section div nav ul li {
+	float: left;
+}
+footer section div nav {
+	position: absolute;
+	top: -5px;
+	right: 0;
+}
+footer section div p {
+	color: #6a86a0;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+footer section div nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+footer section div nav ul li a {
+color: #6a86a0;
+text-decoration: none;
+padding: 0 10px 0 10px;
+border-right: 1px solid #6a86a0; 
+}
+
+.rig {
+	padding-right: 0;
+	border-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
